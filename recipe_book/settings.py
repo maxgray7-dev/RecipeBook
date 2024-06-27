@@ -29,7 +29,10 @@ SECRET_KEY = 'os.environ.get("SECRET_KEY")'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-3939jhnizrw.ws.codeinstitute-ide.net',
+'https://*.heroku.app',
+'https://*.codeinstitute-ide.net',
+]
 
 
 # Application definition
@@ -41,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'recipe_app'
+    'recipe_app',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +84,12 @@ WSGI_APPLICATION = 'recipe_book.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.herokuapp.com",
+    "https://*.gitpod.io",
+    "https://*.codeinstitute-ide.net",
+]
 
 
 # Password validation
