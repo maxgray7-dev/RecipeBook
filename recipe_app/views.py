@@ -18,8 +18,9 @@ class RecipeList(generic.ListView):
     
     # The code below will displays only objects that have status "published"
     queryset = Recipe.objects.all()
-    
-    template_name = 'recipe_app/recipe_list.html'
+
+    # template_name = 'recipe_app/recipe_list.html'
+    template_name = 'recipe_app/index.html'
     paginate_by = 9
 
 
