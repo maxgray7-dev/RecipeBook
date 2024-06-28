@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Recipe
+from .models import Recipe, Comment
 from . import models
 
 
@@ -16,6 +16,6 @@ class RecipeAdmin(SummernoteModelAdmin):
 
 
 
-
+admin.site.register(Comment)
 
 #Register your models here
