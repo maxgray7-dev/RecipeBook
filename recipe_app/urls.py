@@ -5,5 +5,5 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', views.RecipeBook.as_view(), name ='home'),
+    path('', views.RecipeList.as_view(), name ='home'),
 ]

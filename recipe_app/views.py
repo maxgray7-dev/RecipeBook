@@ -14,10 +14,12 @@ from .models import Recipe
 
 
 
-class RecipeBook(generic.ListView):
+class RecipeList(generic.ListView):
+    
     # The code below will displays only objects that have status "published"
-    queryset = Recipe.objects.filter(status=1)
-    template_name = 'recipe_app/index.html'
+    queryset = Recipe.objects.all()
+    
+    template_name = 'recipe_app/recipe_list.html'
     paginate_by = 9
 
 
