@@ -15,11 +15,10 @@ from .models import Recipe
 
 
 class RecipeBook(generic.ListView):
-    model = Recipe
-
-#     queryset = Recipe.objects.all()
-#     template_name = 'recipe_app/index.html'
-#     paginate_by = 5
+    # The code below will displays only objects that have status "published"
+    queryset = Recipe.objects.filter(status=1)
+    template_name = 'recipe_app/index.html'
+    paginate_by = 9
 
 
 # def recipes_detail(request, title):
