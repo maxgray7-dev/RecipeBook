@@ -1,24 +1,18 @@
+
 body {
-    background-color: #F9FAFC;
+    background-color: #c2f7e5;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.my_page_title {
+    font-family: 'Libre Baskerville','Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e8e8f0;
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
+.icon {
+    font-size: 50px;
+    color: rgb(234, 238, 14);
 }
 
 .dark-bg {
@@ -26,7 +20,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #b5e5f1;
 }
 
 .card {
