@@ -20,7 +20,7 @@ class RecipeAdmin(SummernoteModelAdmin):
 class CommentAdmin(SummernoteModelAdmin):
     list_display = ('author','post', 'created_on',)
     search_fields = ['athor', 'title']
-    list_filter = ('author', 'post', 'created_on',)
+    list_filter = ('author', 'created_on', 'post',)
 
 # admin.site.register(Comment)
 
