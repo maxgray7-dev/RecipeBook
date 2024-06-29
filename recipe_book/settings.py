@@ -31,7 +31,7 @@ SECRET_KEY = 'os.environ.get("SECRET_KEY")'
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-f02igfjp3sd.ws.codeinstitute-ide.net',
-'https://*.heroku.app',
+'https://*.herokuapp.com',
 'https://*.codeinstitute-ide.net',
 ]
 
