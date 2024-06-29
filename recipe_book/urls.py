@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 
+
 urlpatterns = [
     path('', include('recipe_app.urls'), name = 'recipe_app-urls'),
     path('about/', include('about.urls'), name = 'about'),
