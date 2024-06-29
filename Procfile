@@ -1,1 +1,1 @@
-web: gunicorn codestar.wsgi
+web: gunicorn recipe_app.wsgi
