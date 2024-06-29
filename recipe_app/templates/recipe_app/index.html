@@ -7,10 +7,10 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div class="col-12 mt-4 left">
             <div class="row">
                 {% for r in recipe_list %}
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
@@ -18,17 +18,13 @@
                                     <p class="author">Author: {{ r.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="post-link">
-                                <h2 class="card-title">{{ r.title }}</h2>
-                            </a>
-
-                            <hr />
-                            <p class="card-text text-muted h6">{{ r.created_on}}
-                            </p>
+                            <a href="#" class="post-link"><h2 class="card-title">{{ r.title }}</h2></a>
+                            <br/>
+                            <p class="card-text text-muted h6">{{ r.created_on}}</p>
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
+                {% if forloop.counter|divisibleby:4 %}
             </div>
             <div class="row">
                 {% endif %}
