@@ -16,11 +16,12 @@ class RecipeAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
-# @admin.register(Comment):
-# class CommentAdmin(SummernoteModelAdmin):
-#     list_display = ('title', 'status', 'created_on', 'author', )
+@admin.register(Comment)
+class CommentAdmin(SummernoteModelAdmin):
+    list_display = ('author','post', 'created_on',)
+    search_fields = ['athor', 'title']
+    list_filter = ('author', 'post', 'created_on',)
 
-
-admin.site.register(Comment)
+# admin.site.register(Comment)
 
 
