@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+        <h2>Add New Reciepe</h2>
+        <p>We love to share recipes with our friends!</p>
+
+        <!-- add your form here. Your submit button should 
+                            have the classes of btn, btn-secondary -->
+        <form method="post">
+            {{ new_recipe | crispy }}
+            {% csrf_token %}
+            <button class="btn btn-secondary" type="submit">Submit</button>
+        </form>
+
+        {% endblock content %}

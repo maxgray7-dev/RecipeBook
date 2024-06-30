@@ -5,11 +5,13 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
-class MyPage(models.Model):
-    name = models.CharField(max_length = 25)
-    profile_image = CloudinaryField('image', default='placeholder')
-    content = models.TextField(max_length=500)
-    updated_on = models.DateTimeField(auto_now=True)
+class NewRecipeRequest(models.Model):
+
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    name = models.CharField(max_length=25) 
+    featured_image = CloudinaryField('image', default='placeholder')
+    status = models.IntegerField()
 
     def __str__(self):
-        return self.title
+        return f"Thank you for sharing the recipe of {self.title} with us!"
