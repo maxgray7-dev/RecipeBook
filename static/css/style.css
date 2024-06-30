@@ -1,15 +1,24 @@
-
+/*--------------------------------------------------General */
 body {
-    background-color: #c2f7e5;
+    background-color: #7ceff3;
 }
 
+
+/*---------------------------------------------------Main Page */
 .my_page_title {
     font-family: 'Libre Baskerville','Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #e8e8f0;
+    color: #a9d7ec;
 }
 
+.dark-bg {
+ color: black;
+ font-size: 20px;
+ font-weight: 600;
+}
+
+/* Recipe background*/
 .card {
     border: none;
     background-color: transparent;
@@ -19,42 +28,42 @@ body {
     position: relative;
 }
 
+/* Author on the main page*/
 .image-flash {
     position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
+    bottom: 1%;
+    min-width: 50%;
+    margin-top: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:#a9d7ec;
 }
-
-.scale {
-    width: 100%;
+/*Heading of the picture on the Recipe Page*/
+.img {
+    width: 50%;
     height: auto;
 }
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
+.general-text {
+    background-color: #86afda;
+    color: white;
     position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
 }
 
-.masthead-image:after {
+.general-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.general-image:after {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
+    right: 30%;
     height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
+    width: 140%;
     z-index: 100;
 }
-
+/*About Page*/
 .text-about {
     font-family: 'Oswald', sans-serif;
 }

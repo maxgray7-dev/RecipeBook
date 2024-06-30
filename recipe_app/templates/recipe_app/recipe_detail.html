@@ -5,21 +5,20 @@
 <div class="general">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ r.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ r.author }} | {{ r.created_on }}</p>
+            <div class="col-md-6 general-text">
+
+                <h1>{{ r.title }}</h1>
+
+                <p>{{ r.author }} | {{ r.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="col-md-6 general-image">
                 {% if "placeholder" in r.featured_image.url %}
                 <img class="scale" src="{% static 'images/default.jpg' %}"
                     alt="placeholder image">
                 {% else %}
-                <img class="scale" src=" {{ r.featured_image.url }}" alt="{{ r.title }}">
+                <img class="img" src=" {{ r.featured_image.url }}" alt="{{ r.title }}">
                 {% endif %}
             </div>
-
         </div>
     </div>
 </div>
