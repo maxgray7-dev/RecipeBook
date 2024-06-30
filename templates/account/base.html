@@ -22,8 +22,8 @@
     </div>
     {% endif %}
 
-    <div>
-      <strong>{% trans "Menu:" %}</strong>
+    <div class="account-settings">
+      <strong>{% trans "ACCOUNT PAGE:" %}</strong>
       <ul>
         {% if user.is_authenticated %}
         <li><a href="{% url 'account_email' %}">{% trans "Change Email" %}</a></li>

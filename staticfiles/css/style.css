@@ -10,10 +10,6 @@ body {
     color: #e8e8f0;
 }
 
-.icon {
-    font-size: 50px;
-    color: rgb(234, 238, 14);
-}
 
 .dark-bg {
     background-color: #445261;
@@ -85,30 +81,8 @@ body {
     z-index: 100;
 }
 
-.profile-image {
-    width: 75%;
-}
 
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
+/*Authentificator buttons*/
 
 .btn-signup,
 .btn-edit {
@@ -122,39 +96,3 @@ body {
     color: #23BBBB;
 }
 
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
-}
