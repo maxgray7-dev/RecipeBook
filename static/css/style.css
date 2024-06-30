@@ -10,19 +10,6 @@ body {
     color: #e8e8f0;
 }
 
-.icon {
-    font-size: 50px;
-    color: rgb(234, 238, 14);
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #b5e5f1;
-}
-
 .card {
     border: none;
     background-color: transparent;
@@ -45,12 +32,6 @@ body {
     height: auto;
 }
 
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -58,17 +39,6 @@ body {
     display: inline-block;
     height: 33vh;
     width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
 }
 
 .masthead-image:after {
@@ -85,76 +55,6 @@ body {
     z-index: 100;
 }
 
-.profile-image {
-    width: 75%;
-}
-
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #c286e6;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #f0f7b0;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #f3e882;
-    background: transparent;
-    border: none;
-}
-
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
+.text-about {
+    font-family: 'Oswald', sans-serif;
 }

@@ -2,6 +2,8 @@
 
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
+{% url 'new_recipe' as new_recipe_url %}
+<!-- {% url 'support' as support_url %} -->
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -18,8 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-
 
 
     <!-- Font Awesome CSS -->
@@ -52,6 +52,10 @@
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}" href="{% url 'about' %}">About</a>
                     </li>
 
+                    <li class ="nav-item">
+                        <a class="nav-link {% if request.path == new_recipe_url %}active" aria-current="page{% endif %}" href="{% url 'new_recipe' %}">New recipe</a>
+                    </li>
+
                     <!---  This code for All auth >> Logout, Register, and Login links-->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -66,11 +70,8 @@
                     </li>
                     {% endif %}
                     <!---  End code for All auth-->
-                </ul>
 
-                <span class="navbar-text text-muted">
-                    Book of Recipes
-                </span>
+                </ul>
             </div>
         </div>
     </nav>

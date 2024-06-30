@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'recipe_app',
     'about',
-
+    'new_recipe',
 ]
 
 MIDDLEWARE = [
