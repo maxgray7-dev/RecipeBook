@@ -34,8 +34,12 @@ body {
     bottom: 1%;
     min-width: 50%;
     margin-top: 2px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color:#a9d7ec;
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 10px;
 }
 /*Heading of the picture on the Recipe Page*/
 .img {
@@ -68,12 +72,15 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-.line-pic {
-    position:relative;
-    margin: 2.7% 3% 0%;
-    position: absolute;
-    width: 10%;
-    top: 5%;
-    
+
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
+    color: #fff;
 }
 
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
