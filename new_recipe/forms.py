@@ -1,9 +1,8 @@
-from .models import NewRecipeRequest
 from django import forms
+from .models import Recipe
 
-
-class NewRecipeForm(forms.ModelForm):
+class RecipeForm(forms.ModelForm):
     class Meta:
-        model = NewRecipeRequest
-        fields = ('title', 'description', 'name', 'featured_image',)
+        model = Recipe
+        fields = ('title', 'description', 'author', 'featured_image',)
         
