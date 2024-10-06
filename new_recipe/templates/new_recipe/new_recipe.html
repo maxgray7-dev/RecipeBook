@@ -7,13 +7,19 @@
 
          <title><h1>New Recipe</h1></title>
         <p>We love to share recipes with our friends!</p>
-        <h2>Add New Reciepe</h2>
+        <h2>Add New Recipe</h2>
 
         <!-- adding form here -->
-        <form method="post">
-            {{ new_recipe | crispy }}
+        <div class="col-md-4 card mb-4 mt-3">
+        <div class="card-body">
+        <form method="post"  style="margin-top: 1.3em;">
+        
+            {{ form | crispy }}
             {% csrf_token %}
             <button class="btn btn-secondary" type="submit">Submit</button>
+
         </form>
+        </div>
+        </div>
 
         {% endblock content %}
