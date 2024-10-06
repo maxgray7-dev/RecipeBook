@@ -30,7 +30,7 @@ SECRET_KEY = 'os.environ.get("SECRET_KEY")'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-f02igfjp3sd.ws.codeinstitute-ide.net',
+ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-cvr5kwlr4ls.ws-eu116.gitpod.io',
 '.herokuapp.com',
 '.codeinstitute-ide.net',
 ]
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'recipe_app',
     'about',
-    'new_recipe',
+    # 'new_recipe',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +131,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Internationalization

@@ -11,7 +11,7 @@ class Recipe(models.Model):
 
     title = models.CharField(max_length=100)
     description = models.TextField()
-    author = models.CharField(max_length=25) 
+    author = models.CharField(max_length=25, default='') 
     featured_image = CloudinaryField('image', default='placeholder')
     date_posted=models.DateTimeField(default=timezone.now)
 
