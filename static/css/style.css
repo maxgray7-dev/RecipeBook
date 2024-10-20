@@ -22,7 +22,7 @@ body {
 
 
 .dark-bg {
- color: rgb(240, 9, 9);
+ color: rgb(0, 0, 0);
  font-size: 20px;
  font-weight: 600;
 }
@@ -32,6 +32,7 @@ body {
     border: none;
     background-color: transparent;
 }
+
 
 .image-container {
     position: relative;
