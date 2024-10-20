@@ -1,20 +1,28 @@
 /*--------------------------------------------------General */
 body {
-    background-color: #7ceff3;
+    background-color: #3A5B26;
+}
+/*---------------------------------------------------Navbar */
+
+.navbar {
+    background-color:#E17E06;
 }
 
 
+
 /*---------------------------------------------------Main Page */
+
+
 .my_page_title {
     font-family: 'Libre Baskerville','Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #a9d7ec;
+    color: #3A5B26;
 }
 
 
 .dark-bg {
- color: black;
+ color: rgb(240, 9, 9);
  font-size: 20px;
  font-weight: 600;
 }
@@ -28,6 +36,11 @@ body {
 .image-container {
     position: relative;
 }
+
+.card-title {
+    color:#f2e074
+}
+
 
 /* Author on the main page*/
 .image-flash {
@@ -71,6 +84,8 @@ body {
 /*About Page*/
 .text-about {
     font-family: 'Oswald', sans-serif;
+    color: #f2e074;
+    font-size: 20px;
 }
 
 
