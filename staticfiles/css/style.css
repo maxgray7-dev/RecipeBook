@@ -1,27 +1,33 @@
 /*--------------------------------------------------General */
 body {
-    background-color: #7ceff3;
+    background-color: #ece3da;
+}
+/*---------------------------------------------------Navbar */
+
+.navbar {
+    background-color:#c0521f;
+}
+
+.navbar-nav>li>a {
+    color: #e8ba99;
+    font-size:13px;
+    font-weight:bold;
 }
 
 
 /*---------------------------------------------------Main Page */
+
+
 .my_page_title {
     font-family: 'Libre Baskerville','Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #a9d7ec;
+    color: #ece3da;
 }
-
-.default-image {
-    position: relative;
-    width: 420px;
-    height: 250px;
-    object-fit:cover;
-} 
 
 
 .dark-bg {
- color: black;
+ color: rgb(0, 0, 0);
  font-size: 20px;
  font-weight: 600;
 }
@@ -32,9 +38,21 @@ body {
     background-color: transparent;
 }
 
+
 .image-container {
     position: relative;
 }
+
+/*Recipe title on the main page*/
+.card-title {
+    color:#677100;
+
+}
+
+a {
+    text-decoration:none;
+}
+
 
 /* Author on the main page*/
 .image-flash {
@@ -43,7 +61,7 @@ body {
     min-width: 50%;
     margin-top: 2px;
     background-color: rgba(0, 0, 0, 0.6);
-    color:#a9d7ec;
+    color:#ece3da;
     word-spacing: 5px;
     text-align: center;
     margin-bottom: 5px;
@@ -78,17 +96,24 @@ body {
 /*About Page*/
 .text-about {
     font-family: 'Oswald', sans-serif;
+    color: #c0521f;
+    font-size: 20px;
+
 }
 
 
 .btn-signup,
-.btn-edit {
+.btn-home {
     background-color: #188181;
     color: #fff;
+    
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+.btn-home:active,
+btn-home:hover {
     background-color: #fff;
     color: #23BBBB;
 }
+

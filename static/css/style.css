@@ -43,12 +43,12 @@ body {
     position: relative;
 }
 
-/*Recipe title on the main page*/
+/*Recipe titles on the main page*/
 .card-title {
     color:#677100;
 
 }
-
+/*removes underlining from hyperlinks on the main page*/
 a {
     text-decoration:none;
 }
@@ -73,9 +73,11 @@ a {
     height: auto;
 }
 
+/*Food Card settings*/
 .general-text {
-    background-color: #86afda;
-    color: white;
+    background-color: #E8BA99;
+    color: #373B08;
+    text-align:center ;
     position: relative;
 }
 
@@ -101,19 +103,20 @@ a {
 
 }
 
+/* Editing buttons "LOGOUT PAGE"*/
 
 .btn-signup,
 .btn-home {
-    background-color: #188181;
-    color: #fff;
-    
+    background-color: #C0512F;
+    color: #ECE3DA;
+
 }
 
 .btn-signup:hover,
 .btn-signup:active,
 .btn-home:active,
-btn-home:hover {
-    background-color: #fff;
-    color: #23BBBB;
+.btn-home:hover {
+    background-color: #ECE3DA;
+    color: #C0521F;
 }
 
