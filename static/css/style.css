@@ -22,9 +22,13 @@ body {
     font-family: 'Libre Baskerville','Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ece3da;
+    color: #ECE3DA;
 }
 
+/**/
+.card-img-top {
+    border: 1px, solid, #ECE3DA;
+}
 
 .dark-bg {
  color: rgb(0, 0, 0);
@@ -74,9 +78,6 @@ a {
     padding-left: 16px;
     
 }
-
-
-
 
 
 /*Heading of the picture on the Recipe Page*/

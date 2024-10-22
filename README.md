@@ -63,30 +63,28 @@ as from the beginning I wanted to include in my project much more futures and op
 
 ### Existing Features
 
-The web page has a simple and intuitive design. On top of the page User sees the Title of the project - Recipe Book. On the right hand side user has a navigation panel.
-Navigation panel allows user to navigate through the project and pick options such as: Home Page, Add New Recipe, Read ABOUT project, login or register.
-After user registered or logged in, navbar hides button register and loginm replacing it on logout.
-Furthermore, user who logged in can add new recipe to the site so other users can see the recipe but they can't edit this recipe if they are not author of the recipe.
-_____________________________________________________________________________________________________________________
+The web page has a simple and intuitive design. On top of the page user sees the Title of the project - Recipe Book. On the right hand side user has a navigation panel.
+Navigation panel allows user to navigate through the project and pick options such as: Home, About, New Recipe, Register and Login.
+After user registered or logged in, option LOGOUT replaces login and register options.
+Furthermore, users who didn't login can't add new recipe.
+
 ### Future improvements left to implement
 
-- The current project has other options tor development.
-- It could be an interestin idea to add orher pages with simple and easy games.
-- I would like to add more animation to the page if I would have more time.
+- The current project requires more options to be added.
+- To make this project more interesting, I would add option to comment recipies and give them likes.This would allow users more interact with other users.
+- I would include option to check recipies and approve it in future for admin.
+- I would also create a new page Favourites, this would be a page where user can save his favourite recipies in alpabetic order.
 
 # Technologies
 
 In the current project were used next technologies and apps:
 
 - Github [link](https://github.com/)
-- Codeanywhere [link](https://app.codeanywhere.com/)
+- Gitpod [link](https://gitpod.io)
 - HTML5
 - CSS3
-- JavaScript
 - Google fonts [link](https://fonts.google.com/)
 - Font awesome [link](https://fontawesome.com/)
-- Adobe Color [link](https://color.adobe.com/explore)
-- MDN Web docs [link](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - <https://css-tricks.com/almanac/>
 - IMGBB [link](https://imgbb.com/)
 - Am I responsive? [link](https://ui.dev/amiresponsive)
@@ -99,7 +97,7 @@ Testing was completed. All information regarding test can be found - [here](TEST
 
 # Deployments
 
-Current Project was developed by using [codeanywhere](https://app.codeanywhere.com/) tool and stored in [github](https://github.com/)
+Current Project was developed by using [gitpod](https://gitpod.io/) tool and stored in [github](https://github.com/)
 It was uploaded from GitHub Pages by following next steps:
 
 1. In the GitHub navigate to **repositories**.
@@ -115,7 +113,7 @@ It was uploaded from GitHub Pages by following next steps:
 
 This project can be cloned by following next steps:
 
-- copy the git clone `https://github.com/maxgray7-dev/RPSLS-game.git` into terminal.
+- copy the git clone `https://github.com/maxgray7-dev/RecpeBook` into terminal.
 - to delete this project type in terminal `git remote rm original`
 
 # Forking
@@ -138,9 +136,8 @@ There are icons that were taken from source listed below. In addition to that I 
 
 # Code
 
-This was my first experience of coding in JavaScript on my own. I found this project quite interesting but challenging. It required a lot of information to re-read, re-watch, and to be practiced before implemented. This project required from me to search for additional sources, codes and and rewatch some videos for multiple times.
-I know now the principle but I have to practice much more and continue learning.
+This is my first project on Django. It feelt very challenging and has a lot of options and allows to build quite progessional websites. Combining Django with other apps brings allows to reach unbelievable results. I learbed that Bootstrap, Crispyforms, Summernote, SQL, Cloudinary and other additions - can add project very interesting futures. Nevertheless, I would say this is also quite complicated project was for me and I feel that If I had more time and opportunities to dive deeper it might allow me to create things that I can't even imagine today. Options are limitless. I hope in future I will have a chance to worl and learn more about it. 
 
 # Acknowledgement
 
-In this chapter I would like to express my gratitude to Code Institute for providing essentialand detailed information about JavaScript materials. It was very helpful when I could learn and peactice. Also, Thank you very much Stefania Frustagli who inspired me and supported me during the time I was writing the code.
+In this chapter I would like to express my gratitude to people who were helping and supporting me. I found for now that this is one of the most difficult tasks I ever done. 
