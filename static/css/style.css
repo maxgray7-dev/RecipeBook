@@ -1,13 +1,18 @@
 /*--------------------------------------------------General */
 body {
-    background-color: #3A5B26;
+    background-color: #ece3da;
 }
 /*---------------------------------------------------Navbar */
 
 .navbar {
-    background-color:#E17E06;
+    background-color:#c0521f;
 }
 
+.navbar-nav>li>a {
+    color: #e8ba99;
+    font-size:13px;
+    font-weight:bold;
+}
 
 
 /*---------------------------------------------------Main Page */
@@ -17,7 +22,7 @@ body {
     font-family: 'Libre Baskerville','Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #3A5B26;
+    color: #ece3da;
 }
 
 
@@ -39,7 +44,7 @@ body {
 }
 
 .card-title {
-    color:#f2e074
+    color:#c0521f;
 }
 
 
@@ -50,7 +55,7 @@ body {
     min-width: 50%;
     margin-top: 2px;
     background-color: rgba(0, 0, 0, 0.6);
-    color:#a9d7ec;
+    color:#ece3da;
     word-spacing: 5px;
     text-align: center;
     margin-bottom: 5px;
@@ -85,7 +90,7 @@ body {
 /*About Page*/
 .text-about {
     font-family: 'Oswald', sans-serif;
-    color: #f2e074;
+    color: #c0521f;
     font-size: 20px;
 }
 
