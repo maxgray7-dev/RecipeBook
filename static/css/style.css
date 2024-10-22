@@ -43,8 +43,14 @@ body {
     position: relative;
 }
 
+/*Recipe title on the main page*/
 .card-title {
-    color:#c0521f;
+    color:#677100;
+
+}
+
+a {
+    text-decoration:none;
 }
 
 
@@ -92,17 +98,21 @@ body {
     font-family: 'Oswald', sans-serif;
     color: #c0521f;
     font-size: 20px;
+
 }
 
 
 .btn-signup,
-.btn-edit {
+.btn-home {
     background-color: #188181;
     color: #fff;
+    
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+.btn-home:active,
+btn-home:hover {
     background-color: #fff;
     color: #23BBBB;
 }
