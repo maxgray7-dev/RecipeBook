@@ -12,13 +12,19 @@
         <!-- adding form here -->
         <div class="col-md-4 card mb-4 mt-3">
         <div class="card-body">
-        <form method="post"  style="margin-top: 1.3em;">
+            {% if user.is_authenticated %}
+            <h3> Please add new recipe:</h3>
+            <p>Posting as: {{user.username}}</p>
+        <form id="newRecipe" method="post"  style="margin-top: 1.3em;">
         
             {{ form | crispy }}
             {% csrf_token %}
             <button class="btn btn-secondary" type="submit">Submit</button>
 
         </form>
+        {% else %}
+        <p>Only logged in users can post new recipies. Please log in.</p>
+        {% endif %}
         </div>
         </div>
 
