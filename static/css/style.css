@@ -67,6 +67,18 @@ a {
     margin-bottom: 5px;
     padding-top: 10px;
 }
+/* ADDING NEW RECIPE PAGE*/
+/* align text on top of the page with other fields*/
+.main-bg > p,
+.main-bg > h2 {
+    padding-left: 16px;
+    
+}
+
+
+
+
+
 /*Heading of the picture on the Recipe Page*/
 .img {
     width: 50%;
