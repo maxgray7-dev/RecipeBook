@@ -113,7 +113,7 @@ It was uploaded from GitHub Pages by following next steps:
 
 This project can be cloned by following next steps:
 
-- copy the git clone `https://github.com/maxgray7-dev/RecpeBook` into terminal.
+- copy the git clone `https://github.com/maxgray7-dev/RecipeBook.git` into terminal.
 - to delete this project type in terminal `git remote rm original`
 
 # Forking

@@ -50,8 +50,8 @@ body {
 /*Recipe titles on the main page*/
 .card-title {
     color:#677100;
-
 }
+
 /*removes underlining from hyperlinks on the main page*/
 a {
     text-decoration:none;

@@ -8,12 +8,12 @@
     <div class="row">
 
         <!-- Recipes Entries Column -->
-        <div class="col-12 mt-4 left">
+        <div class="col-12 mt-4 left" >
             <div class="row">
                 {% for r in recipe_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
+                    <div class="card mb-4" >
+                        <div class="card-body"  style="border: 1px, solid, #3A5B26;">
                             <div class="image-container">
                                 {% if "placeholder" in r.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
