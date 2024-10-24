@@ -30,7 +30,7 @@ SECRET_KEY = 'os.environ.get("SECRET_KEY")'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-m9a3i0oyc47.ws-eu116.gitpod.io',
+ALLOWED_HOSTS = ['8000-maxgray7dev-recipebook-m168v9fn8q0.ws-eu116.gitpod.io',
 '.herokuapp.com',
 '.codeinstitute-ide.net',
 ]
