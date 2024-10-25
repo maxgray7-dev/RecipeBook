@@ -25,7 +25,6 @@ body {
     color: #ECE3DA;
 }
 
-/**/
 .card-img-top {
     border: 1px, solid, #ECE3DA;
 }
@@ -47,7 +46,7 @@ body {
     position: relative;
 }
 
-/*Recipe titles on the main page*/
+/*------------------------------------Recipe titles on the main page*/
 .card-title {
     color:#677100;
 }
@@ -71,7 +70,7 @@ a {
     margin-bottom: 5px;
     padding-top: 10px;
 }
-/* ADDING NEW RECIPE PAGE*/
+/*-----------------------------------------NEW RECIPE PAGE*/
 /* align text on top of the page with other fields*/
 .main-bg > p,
 .main-bg > h2 {
@@ -116,6 +115,17 @@ a {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Editing buttons "LOGOUT PAGE"*/
 
 .btn-signup,
@@ -124,6 +134,7 @@ a {
     color: #ECE3DA;
 
 }
+
 
 .btn-signup:hover,
 .btn-signup:active,
