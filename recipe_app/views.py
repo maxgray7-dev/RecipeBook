@@ -44,7 +44,6 @@ def recipe_detail(request, slug):
         request,
         "recipe_app/recipe_detail.html",
         {"r": recipe,
-        "coder": "Maksim Popov",
         },
 
     )

@@ -4,13 +4,15 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
+<div class="new-recipe-form">
+    
          <title><h1>New Recipe</h1></title>
+
         <p>We love to share recipes with our friends!</p>
         <h2>Add New Recipe</h2>
 
         <!-- adding form here -->
-        <div class="col-md-4 card mb-4 mt-3">
+        <div class="col-md-8 card mb-4 mt-3 new-recipe-card">
         <div class="card-body">
             {% if user.is_authenticated %}
             <h3> Please add new recipe:</h3>
@@ -23,9 +25,9 @@
 
         </form>
         {% else %}
-        <p>Only logged in users can post new recipies. Please log in.</p>
+        <p style="text-align: center;">Only logged in users can post new recipies. Please log in.</p>
         {% endif %}
         </div>
         </div>
-
+</div>
         {% endblock content %}

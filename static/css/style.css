@@ -14,6 +14,23 @@ body {
     font-weight:bold;
 }
 
+.nav-link:hover {
+    color: #ECE3DA;
+}
+
+
+.navbar-nav  a.nav-link.active {
+    color: #ECE3DA;
+}
+
+.navbar-toggler {
+    color:#ECE3DA;
+    border:1px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem;
+}
 
 /*---------------------------------------------------Main Page */
 
@@ -79,14 +96,28 @@ a {
 }
 
 
-/*Heading of the picture on the Recipe Page*/
-.img {
-    width: 50%;
-    height: auto;
+.new-recipe-form {
+    padding-left: 20%;
+    padding-right: 20%;
+} 
+.new-recipe-form > h2,
+.new-recipe-form > p,
+.card-body > h3 {
+    text-align: center;
+} 
+
+.card-body > p {
+    text-align: right;
 }
 
+.new-recipe-card {
+    width: 100%;
+}
+
+
+/*Heading of the picture on the Recipe Page*/
 .scale {
-    width: 5;
+    width: 50%;
     height: auto;
 }
 
@@ -120,14 +151,11 @@ a {
 
 }
 
+/*----        REGISTER Page*/
 
-
-
-
-
-
-
-
+.register {
+    padding-left:5%;
+}
 
 
 
