@@ -1,5 +1,5 @@
 from django import forms
-from .models import Recipe
+from recipe_app.models import Recipe
 
 class RecipeForm(forms.ModelForm):
     class Meta:

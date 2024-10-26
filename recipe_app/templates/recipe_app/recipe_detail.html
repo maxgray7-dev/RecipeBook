@@ -17,7 +17,7 @@
                 <img class="scale" src="{% static 'images/default.jpg' %}"
                     alt="placeholder image">
                 {% else %}
-                <img class="img" src=" {{ r.featured_image.url }}" alt="{{ r.title }}">
+                <img class="scale" src=" {{ r.featured_image.url }}" alt="{{ r.title }}">
                 {% endif %}
             </div>
         </div>

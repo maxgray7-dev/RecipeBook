@@ -85,6 +85,11 @@ a {
     height: auto;
 }
 
+.scale {
+    width: 5;
+    height: auto;
+}
+
 /*Food Card settings*/
 .general-text {
     background-color: #E8BA99;
