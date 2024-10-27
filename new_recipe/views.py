@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import RecipeForm
-
+from recipe_app.models import Recipe
 
 
 
@@ -10,7 +10,9 @@ def new_recipe(request):
     if request.method == 'POST':
         form = RecipeForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            saved_form = form.save(commit=False)
+            saved_form.author = request.user
+            saved_form.save()
             return redirect("recipe_success")
     else:
         form = RecipeForm()

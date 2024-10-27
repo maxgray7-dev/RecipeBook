@@ -20,6 +20,7 @@
         <form id="newRecipe" method="post"  style="margin-top: 1.3em;">
         
             {{ form | crispy }}
+            {{ form.media }}
             {% csrf_token %}
             <button class="btn btn-secondary" type="submit">Submit</button>
 
