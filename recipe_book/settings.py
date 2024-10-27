@@ -159,10 +159,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Summernote settings (update width for summernote on the page ADD NEW RECIPE)
 SUMMERNOTE_CONFIG = {
-    # You can put custom Summernote settings
     'summernote': {
-        # Change editor size
-        'width': '100%',
+      'width': '100%',
     },
 }
