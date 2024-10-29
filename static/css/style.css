@@ -42,10 +42,6 @@ body {
     color: #ECE3DA;
 }
 
-.card-img-top {
-    border: 1px, solid, #ECE3DA;
-}
-
 .dark-bg {
  color: rgb(0, 0, 0);
  font-size: 20px;
