@@ -51,9 +51,10 @@ The site allows to store all recipies and share interesting menu with other user
 ### Colour palette
 
 - In the project were used mainly 5 colours : Burgundi, Dark Green, Dark Olive, Pink and Gray color.
+
  ![Palette](https://i.ibb.co/pZcvGQw/Bellanowebstudio-django.png")
 
-To make design more user friendly and easy for eyes I picked followed in my work these 5 colors.
+To make design user friendly and easy for eyes I followed in my work these 5 colors.
 
 ### Canban Board
 - In my work I used Agile Approach, which means that I updated some aspects and ideas while I was working on the project. This brough to me quite interesting experience, 
@@ -67,11 +68,12 @@ The web page has a simple and intuitive design. On top of the page user sees the
 Navigation panel allows user to navigate through the project and pick options such as: Home, About, New Recipe, Register and Login.
 After user registered or logged in, option LOGOUT replaces login and register options.
 Furthermore, users who didn't login can't add new recipe.
+After adding a recipe, admin will be needed to approve it before it published.
 
 ### Future improvements left to implement
 
 - The current project requires more options to be added.
-- To make this project more interesting, I would add option to comment recipies and give them likes.This would allow users more interact with other users.
+- To make this project even more interesting, I would add option to comment recipies and give them likes.This would allow users interact with other users.
 - I would include option to check recipies and approve it in future for admin.
 - I would also create a new page Favourites, this would be a page where user can save his favourite recipies in alpabetic order.
 
@@ -81,6 +83,7 @@ In the current project were used next technologies and apps:
 
 - Github [link](https://github.com/)
 - Gitpod [link](https://gitpod.io)
+- Heroku [link](https://heroku.com/)
 - HTML5
 - CSS3
 - Google fonts [link](https://fonts.google.com/)
@@ -90,6 +93,7 @@ In the current project were used next technologies and apps:
 - Am I responsive? [link](https://ui.dev/amiresponsive)
 - WC3 Validator for HTML [link](https://validator.w3.org/)
 - WC3 Validator for CSS [link] (<https://jigsaw.w3.org/css-validator/>)
+
 
 # Testing
 

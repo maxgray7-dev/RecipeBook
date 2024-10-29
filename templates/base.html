@@ -87,9 +87,9 @@
       
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
-        <p class = "text-end m-3"> You are logged in as {{ user }}</p>
+        <p class = "text-end m-3 status"> You are logged in as {{ user }}</p>
         {% else %}
-        <p class="text-end m-3">You are not logged in</p>
+        <p class="text-end m-3 status">You are not logged in</p>
         {% endif %}
 
         {% block content %}
@@ -100,8 +100,8 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-1 text-center text-dark">{% block copyright %} Updated by Max 2024 {% endblock copyright %}</p>
-        <p class="m-1 text-center text-dark">Follow us:
+        <p class="m-1 text-center">{% block copyright %} Updated by Max 2024 {% endblock copyright %}</p>
+        <p class="m-1 text-center">Follow us:
             <i class="fa-brands fa-linkedin"></i>
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i>

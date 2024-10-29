@@ -7,9 +7,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Log In" %}</h3>
-            <p>
-                {% blocktrans %}Welcome to My Recipe book project. For sharing a new recipe or leaving comment please log in. If you have no account with us, please follow this link <a class="link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+            <h3 class="login">{% trans "Log In" %}</h3>
+            <p class ="welcome">
+                {% blocktrans %}Welcome to <strong>"My Recipe Book"</strong> project. For sharing a new recipe or leaving comment please log in. 
+                If you have no account with us, please follow this link <a class="link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
             </p>
         </div>
     </div>
