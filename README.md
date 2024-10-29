@@ -101,7 +101,7 @@ Testing was completed. All information regarding test can be found - [here](TEST
 
 # Deployments
 
-Current Project was developed by using [gitpod](https://gitpod.io/) tool and stored in [github](https://github.com/)
+Current Project was developed by using [gitpod](https://gitpod.io/) tool and stored in [github](https://github.com/) and [heroku](https://heroku.com)
 It was uploaded from GitHub Pages by following next steps:
 
 ### HEROKU
@@ -121,7 +121,7 @@ Go to [HEROKU](https://dashboard.heroku.com/apps)
 10 -First, add "python" and click save.
 11 -Second, add "nodejs" and click save.
 
-The live site can be found here: [MY RECIPE BOOK](link)
+The live site can be found here: [MY RECIPE BOOK](https://recipebook-project-38cd4cf73dc9.herokuapp.com/)
 
 # Cloaning
 
