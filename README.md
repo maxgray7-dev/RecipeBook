@@ -104,39 +104,51 @@ Testing was completed. All information regarding test can be found - [here](TEST
 Current Project was developed by using [gitpod](https://gitpod.io/) tool and stored in [github](https://github.com/)
 It was uploaded from GitHub Pages by following next steps:
 
-1. In the GitHub navigate to **repositories**.
-2. From repositories pick name of the project to deploy.
-3. On the top of the page , navigate to the **Settings**.
-4. On the left, can be found a list of options - select and click **Pages**
-5. On **GitHub Pages**, under the section **Build and deployment**, the Source should be picked **"Deploy from branch"**. THe Branch should be set to \_**\_main\_\_**, and Folder to \_**\_/root\_\_**. Press "Save".
-6. Wait 2-5 mins to allow code to be refreshed and build the page.
-7. Navigate back to **Code** tab, and from the right-hand side pick **"github-pages"**.
-8. Pick the latest deployment, and click on the sqare with an arrow looking tothe top right corner. That will allow to see the live website.
+### HEROKU
+
+Heroku
+I used Heroku to deploy this project on icloud. To process, required next steps:
+Go to [HEROKU](https://dashboard.heroku.com/apps)
+1 - Log in to Heroku
+2 - Click "New"
+3 - Create a new app
+4 - Choose the app name and region
+5 - Navigate to the "settings" tab.
+6 - Click "Reveal Config Vars".
+7 - Add a configuration variable to Heroku's Settings. The key is PORT and the value is 8000
+8 - Scroll down to "Buildpacks".
+9 - Click "Add Buildpack".
+10 -First, add "python" and click save.
+11 -Second, add "nodejs" and click save.
+
+The live site can be found here: [MY RECIPE BOOK](link)
 
 # Cloaning
 
 This project can be cloned by following next steps:
 
-- copy the git clone `https://github.com/maxgray7-dev/RecipeBook.git` into terminal.
-- to delete this project type in terminal `git remote rm original`
+ Go to [GitHub](https://github.com/) and follow next steps:
+ 1 - Click button "Code" that can be found in GitHub Repository
+ 2 - Select "HTTPS" and copy the link.
+ 3 - Use GitBush in window and open terminal and navigate to the repository where you need to paste cloned reposotory(repo)
+ 4 - Enter "git clone" followed by the copied link
+ 5 - Press "Enter" to clone repo.
 
 # Forking
 
-    Forking allows to make a copy of the project and edit it without risk to original repo.
-    Forking can be completed by few steps, such as:
-
-- Open your GitHub Account.
-- Find Repositiory to copy.
-- at the top right of the screen, can b seen a button "Fork". Select and Click.
-
-All changes pushed to the main branch will be reflected on the site.
+ Forking allows to copy the project and copy to your own GitHub. Which will allow to work and change it.
+ To do forking requie to complete next step. Go to [GitHub](https://github.com/)
+ 1 - Select required repo
+ 2 - On the top right screen, can be found a button with "Fork" label. Click it.
 
 ## Credits
 
 The Project has been designed by Maksim Popov.
-There are icons that were taken from source listed below. In addition to that I used sources to learn more about javaScript:
+There are icons that were taken from source listed below.
+To make design easy for eyes I used suggested option from Bellano Web Studio Site.
 
 - Hand Icons [source](https://fontawesome.com/)
+- Design color's palette - Bellano Web Studio  [source](https://bellanowebstudio.com/food-inspired-color-palettes/)
 
 # Code
 

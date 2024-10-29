@@ -1,6 +1,6 @@
 /*--------------------------------------------------General */
 body {
-    background-color: #2b1b0b;
+    background-color: #ECE3DA;
 }
 /*---------------------------------------------------Navbar */
 
@@ -14,6 +14,23 @@ body {
     font-weight:bold;
 }
 
+.nav-link:hover {
+    color: #ECE3DA;
+}
+
+
+.navbar-nav  a.nav-link.active {
+    color: #ECE3DA;
+}
+
+.navbar-toggler {
+    color:#ECE3DA;
+    border:1px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem;
+}
 
 /*---------------------------------------------------Main Page */
 
@@ -75,18 +92,40 @@ a {
 .main-bg > p,
 .main-bg > h2 {
     padding-left: 16px;
-    
 }
+
+.status {
+    color:#373B08;
+    font-size:15px;
+    text-decoration: underline;
+}
+
+
+.new-recipe-form {
+    padding-left: 20%;
+    padding-right: 20%;
+} 
+.new-recipe-form > h2,
+.new-recipe-form > p,
+.card-body > h3 {
+    text-align: center;
+    color:#373B08;
+} 
+
+.card-body > p {
+    text-align: center;
+    color:#373B08;
+}
+
+.new-recipe-card {
+    width: 100%;
+}
+
 
 
 /*Heading of the picture on the Recipe Page*/
-.img {
-    width: 50%;
-    height: auto;
-}
-
 .scale {
-    width: 5px;
+    width: 50%;
     height: auto;
 }
 
@@ -115,20 +154,31 @@ a {
 /*About Page*/
 .text-about {
     font-family: 'Oswald', sans-serif;
-    color: #c0521f;
+    color:#373B08;
     font-size: 20px;
 
 }
 
+/*----        REGISTER Page*/
+
+.register {
+    padding-left:5%;
+    color:#373B08;
+}
+
+.register>p {
+    color:#373B08;
+    font-size: 30px;
+}
 
 
-
-
-
-
-
-
-
+/* LOG IN Page */
+.login {
+    color: #373B08;
+}
+.welcome {
+    color:#373B08;
+}
 
 
 /* Editing buttons "LOGOUT PAGE"*/
@@ -149,3 +199,7 @@ a {
     color: #C0521F;
 }
 
+.footer>p,
+.footer>i {
+    color:#373B08
+}

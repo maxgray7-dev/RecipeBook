@@ -1,18 +1,69 @@
-asgiref==3.8.1
-cloudinary==1.36.0
-crispy-bootstrap5==0.7
-dj-database-url==0.5.0
-dj3-cloudinary-storage==0.0.6
-Django==4.2.13
-django-allauth==0.57.2
-django-crispy-forms==2.2
-django-summernote==0.8.20.0
-gunicorn==20.1.0
-oauthlib==3.2.2
-psycopg2==2.9.9
-PyJWT==2.8.0
-python3-openid==3.2.0
-requests-oauthlib==2.0.0
-sqlparse==0.5.0
-urllib3==1.26.19
-whitenoise==5.3.0
+Collecting local
+  Downloading local-1.0.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting ioutil (from local)
+  Downloading ioutil-1.0.3-py3-none-any.whl.metadata (2.6 kB)
+Collecting srutil (from local)
+  Downloading srutil-1.0.3-py3-none-any.whl.metadata (1.9 kB)
+Collecting pyarrow (from local)
+  Downloading pyarrow-18.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting toml (from ioutil->local)
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting pandas (from ioutil->local)
+  Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 9.5 MB/s eta 0:00:00
+Requirement already satisfied: urllib3 in /workspace/.pip-modules/lib/python3.12/site-packages (from srutil->local) (1.26.19)
+Requirement already satisfied: requests in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from srutil->local) (2.32.3)
+Collecting pyperclip (from srutil->local)
+  Downloading pyperclip-1.9.0.tar.gz (20 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting wikipedia (from srutil->local)
+  Downloading wikipedia-1.4.0.tar.gz (27 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting speedtest-cli (from srutil->local)
+  Downloading speedtest_cli-2.1.3-py2.py3-none-any.whl.metadata (6.8 kB)
+Requirement already satisfied: beautifulsoup4 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from srutil->local) (4.12.3)
+Collecting tabulate (from srutil->local)
+  Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+Requirement already satisfied: soupsieve>1.2 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from beautifulsoup4->srutil->local) (2.5)
+Collecting numpy>=1.26.0 (from pandas->ioutil->local)
+  Downloading numpy-2.1.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.9/60.9 kB 19.3 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from pandas->ioutil->local) (2.9.0.post0)
+Collecting pytz>=2020.1 (from pandas->ioutil->local)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas->ioutil->local)
+  Downloading tzdata-2024.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from requests->srutil->local) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from requests->srutil->local) (3.7)
+Requirement already satisfied: certifi>=2017.4.17 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from requests->srutil->local) (2024.6.2)
+Requirement already satisfied: six>=1.5 in /home/gitpod/.pyenv/versions/3.12.2/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas->ioutil->local) (1.16.0)
+Downloading local-1.0.0-py3-none-any.whl (10 kB)
+Downloading ioutil-1.0.3-py3-none-any.whl (11 kB)
+Downloading pyarrow-18.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (40.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.0/40.0 MB 56.7 MB/s eta 0:00:00
+Downloading srutil-1.0.3-py3-none-any.whl (13 kB)
+Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 142.4 MB/s eta 0:00:00
+Downloading speedtest_cli-2.1.3-py2.py3-none-any.whl (23 kB)
+Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Downloading numpy-2.1.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.0/16.0 MB 124.9 MB/s eta 0:00:00
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.0/508.0 kB 90.2 MB/s eta 0:00:00
+Downloading tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.6/346.6 kB 80.7 MB/s eta 0:00:00
+Building wheels for collected packages: pyperclip, wikipedia
+  Building wheel for pyperclip (setup.py): started
+  Building wheel for pyperclip (setup.py): finished with status 'done'
+  Created wheel for pyperclip: filename=pyperclip-1.9.0-py3-none-any.whl size=11002 sha256=f5d3d7fdac03228589e85deca77d0ad7c635c92c235c9bdbb54f10b557077b42
+  Stored in directory: /home/gitpod/.cache/pip/wheels/e0/e8/fc/8ab8aa326e33bc066ccd5f3ca9646eab4299881af933f94f09
+  Building wheel for wikipedia (setup.py): started
+  Building wheel for wikipedia (setup.py): finished with status 'done'
+  Created wheel for wikipedia: filename=wikipedia-1.4.0-py3-none-any.whl size=11678 sha256=56323a104a7e82d7b6375ddfa61c16e3ce0b8aca280033044186cd16365b08ac
+  Stored in directory: /home/gitpod/.cache/pip/wheels/63/47/7c/a9688349aa74d228ce0a9023229c6c0ac52ca2a40fe87679b8
+Successfully built pyperclip wikipedia
+Installing collected packages: speedtest-cli, pytz, pyperclip, tzdata, toml, tabulate, pyarrow, numpy, wikipedia, pandas, srutil, ioutil, local
+Successfully installed ioutil-1.0.3 local-1.0.0 numpy-2.1.2 pandas-2.2.3 pyarrow-18.0.0 pyperclip-1.9.0 pytz-2024.2 speedtest-cli-2.1.3 srutil-1.0.3 tabulate-0.9.0 toml-0.10.2 tzdata-2024.2 wikipedia-1.4.0
