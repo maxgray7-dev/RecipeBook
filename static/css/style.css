@@ -152,8 +152,12 @@ a {
     font-family: 'Oswald', sans-serif;
     color:#373B08;
     font-size: 20px;
-
 }
+
+.mt-3 {
+    margin-top:0rem !important;
+}
+
 
 /*----        REGISTER Page*/
 
@@ -203,7 +207,7 @@ a {
 /*---------------------------------------------------------Media query settings*/
 
 
-@media screen and (man-width: 768px) {
+@media screen and (max-width: 768px) {
     .general-text {
         margin-bottom: 10px;
     }
