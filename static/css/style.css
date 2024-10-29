@@ -199,3 +199,12 @@ a {
 .footer>i {
     color:#373B08
 }
+
+/*---------------------------------------------------------Media query settings*/
+
+
+@media screen and (man-width: 768px) {
+    .general-text {
+        margin-bottom: 10px;
+    }
+}
