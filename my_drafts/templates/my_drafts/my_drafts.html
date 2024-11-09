@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% load static %}
 
 {% block content %}
@@ -30,6 +31,7 @@
                             </a>
                             <br/>
                             <p class="card-text text-muted h6">{{ r.created_on}}</p>
+                            <button class="btn btn-delete" data-recipe_slug="{{ r.slug }}">Delete</button>
                         </div>
                     </div>
                 </div>
@@ -53,5 +55,34 @@
     {% endif %}
 </div>
 
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1"
+  aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"
+          id="deleteModalLabel">Delete recipe?</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete your recipe?
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+          data-bs-dismiss="modal">Close</button>
+        <a id="deleteConfirm" href="#" class="btn
+          btn-danger">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- index.html content ends here -->
+{% endblock %}
+
+{% block extras %}
+<script src="{% static 'js/recipes.js' %}"></script>
 {% endblock %}

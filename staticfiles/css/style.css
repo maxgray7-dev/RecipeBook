@@ -42,10 +42,6 @@ body {
     color: #ECE3DA;
 }
 
-.card-img-top {
-    border: 1px, solid, #ECE3DA;
-}
-
 .dark-bg {
  color: rgb(0, 0, 0);
  font-size: 20px;
@@ -156,8 +152,12 @@ a {
     font-family: 'Oswald', sans-serif;
     color:#373B08;
     font-size: 20px;
-
 }
+
+.mt-3 {
+    margin-top:0rem !important;
+}
+
 
 /*----        REGISTER Page*/
 
@@ -202,4 +202,13 @@ a {
 .footer>p,
 .footer>i {
     color:#373B08
+}
+
+/*---------------------------------------------------------Media query settings*/
+
+
+@media screen and (max-width: 768px) {
+    .general-text {
+        margin-bottom: 10px;
+    }
 }

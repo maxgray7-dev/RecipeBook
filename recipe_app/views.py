@@ -35,7 +35,7 @@ def recipe_detail(request, slug):
 
     #   *** Template ***
     #   :template:'blog/post_detail.html'
-    queryset = Recipe.objects.filter(status=1)
+    queryset = Recipe.objects.filter()
     recipe = get_object_or_404(queryset, slug=slug)
 
     print("About to render template")

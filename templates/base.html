@@ -1,10 +1,11 @@
 {% load static %}
 
-{% url 'home' as home_url %}
+{% url 'recipe_app:home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'new_recipe' as new_recipe_url %} 
 <!-- {% url 'support' as support_url %} -->
 {% url 'account_login' as login_url %}
+{% url 'my_drafts:my_drafts' as my_drafts_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
 
@@ -44,7 +45,7 @@
     <!-- Navigation -->
     <nav class="navbar border-bottom border-body">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="my_page_title">My Recipe Book<span class="icon"> 
+            <a class="navbar-brand" href="{% url 'recipe_app:home' %}"><span class="my_page_title">My Recipe Book<span class="icon"> 
                 <i class="fa-solid fa-book-open"></i></span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -54,7 +55,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'recipe_app:home' %}">Home</a>
                     </li>
                     <li class ="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}" href="{% url 'about' %}">About</a>
@@ -67,6 +68,10 @@
                     {% if user.is_authenticated %}
                     <li class ="nav-item">
                         <a class="nav-link {% if request.path == new_recipe_url %}active" aria-current="page{% endif %}" href="{% url 'new_recipe' %}">New recipe</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == my_drafts_url %}active" aria-current="page{% endif %}" href="{% url 'my_drafts:my_drafts' %}">My Drafts</a>
                     </li>
 
                     <li class="nav-item">

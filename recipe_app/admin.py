@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Recipe, Comment
+from .models import Recipe
 from . import models
 
 
@@ -14,13 +14,6 @@ class RecipeAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'content']
     list_filter = ('author', 'title', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
-
-
-@admin.register(Comment)
-class CommentAdmin(SummernoteModelAdmin):
-    list_display = ('author','post', 'created_on',)
-    search_fields = ['athor', 'title']
-    list_filter = ('author', 'created_on', 'post',)
 
 # admin.site.register(Comment)
 

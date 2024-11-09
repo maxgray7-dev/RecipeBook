@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', include('about.urls'), name = 'about'),
     path('recipe/', include('new_recipe.urls')),
+    path('my_drafts/', include('my_drafts.urls', namespace='my_drafts')),
     path('accounts/', include('allauth.urls')),
     path('summernote/', include('django_summernote.urls')),
-    path('', include('recipe_app.urls'), name = 'recipe_app-urls'),
+    path('', include('recipe_app.urls', namespace='recipe_app')),
 ]

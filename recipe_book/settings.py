@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'recipe_app',
     'about',
     'new_recipe',
+    'my_drafts',
 ]
 
 MIDDLEWARE = [
