@@ -19,13 +19,18 @@ class Recipe(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
 
+    # This orders data from newest to oldest
     class Meta:
         ordering = ["created_on", "author"]
-    
-    
-    
+       
     def __str__(self):
         return f"{self.title} | written by {self.author}"
+
+
+
+
+
+
 
 # This model will allow users to comment under the recipe
 
