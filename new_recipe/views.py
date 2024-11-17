@@ -4,7 +4,7 @@ from recipe_app.models import Recipe
 
 
 
-# Create your views here.
+# Adding new recipe
 
 def new_recipe(request):
     if request.method == 'POST':
@@ -18,7 +18,7 @@ def new_recipe(request):
         form = RecipeForm()
     return render(request, 'new_recipe/new_recipe.html', {'form': form})
 
-
+# Show to user that new recipe has been added succesfully
 def recipe_success(request):
     return render(request, 'new_recipe/recipe_success.html')
 

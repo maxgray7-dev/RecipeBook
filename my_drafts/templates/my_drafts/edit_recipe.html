@@ -1,0 +1,95 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+<div class="new-recipe-form">
+    
+        <title><h1>Edit Recipe</h1></title>
+
+        <h2>Edit Recipe</h2>
+
+        <!-- adding form here -->
+        <div class="col-md-8 card mb-4 mt-3 new-recipe-card">
+        <div class="card-body">
+            {% if user.is_authenticated %}
+            <h3> Please add new recipe:</h3>
+            <p>Posting as: {{user.username}}</p>
+        <form id="newRecipe" method="post"  style="margin-top: 1.3em;">
+        
+            {{ form | crispy }}
+            {{ form.media }}
+            {% csrf_token %}
+            <button class="btn btn-secondary" type="submit">Submit</button>
+
+        </form>
+        {% else %}
+        <p>Only logged in users can post new recipies. Please log in.</p>
+        {% endif %}
+        </div>
+        </div>
+</div>
+        {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="editModal" tabindex="-1"
+        aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"
+                id="editModalLabel">Edit recipe</h5>
+              <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- adding form here -->
+                <div class="col-md-8 card mb-4 mt-3 new-recipe-card">
+                  <div class="card-body">
+                      {% if user.is_authenticated %}
+                      <h3> Please add new recipe:</h3>
+                      <p>Posting as: {{user.username}}</p>
+                  <form id="newRecipe" method="post"  style="margin-top: 1.3em;">
+                  
+                      {{ form | crispy }}
+                      {{ form.media }}
+                      {% csrf_token %}
+                      <button class="btn btn-secondary" type="submit">Submit</button>
+      
+                  </form>
+                  {% else %}
+                  <p>Only logged in users can post new recipies. Please log in.</p>
+                  {% endif %}
+                  </div>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">Close</button>
+              <a id="editConfirm" href="#" class="btn
+                btn-danger">Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      

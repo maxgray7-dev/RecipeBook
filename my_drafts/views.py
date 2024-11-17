@@ -6,6 +6,7 @@ from django.shortcuts import render, reverse
 from django.views import generic
 from recipe_app.models import Recipe
 from django.shortcuts import get_object_or_404
+from .forms import RecipeForm
 
 
 
@@ -29,6 +30,7 @@ class RecipeEditList(generic.ListView):
     paginate_by = 9
 
 
+
 def recipe_delete(request, slug):
     """
     view to delete recipe
@@ -38,3 +40,24 @@ def recipe_delete(request, slug):
     recipe.delete()
 
     return HttpResponseRedirect(reverse('my_drafts:my_drafts'))
+
+
+#  Editing Recipe 
+
+def recipe_edit(request, slug):
+    if request.method == "POST":
+
+        queryset = Recipe.objects.filter(status=0)
+        recipe = get_object_or_404(queryset, slug=slug)
+        recipe_form = RecipeForm(data=request.POST, instance=recipe)
+
+        if recipe_form.is_valid():
+            recipe = recipe_form.save(commit=False)
+            recipe.author = request.user
+            recipe.save()
+            messages.add_messages(request, messages.SUCCESS, 'Recipe Updated')
+        else:
+            messages.add_messages(request, messages.ERROR, 'Error Updating Recipe')
+
+    return HttpResponseRedirect(reverse('my_drafts:my_drafts'))
+
