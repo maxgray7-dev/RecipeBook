@@ -2,8 +2,8 @@
 const editButtons = document.getElementsByClassName("btn-edit");
 // const recipeForm = document.getElementById("recipeForm");
 // const submitButton = document.getElementById("submitButton");
-const editConfirm = document.getElementById("editConfirm");
-const editModal = new bootstrap.Modal(document.getElementById("editModal"));
+// const editConfirm = document.getElementById("editConfirm");
+// const editModal = new bootstrap.Modal(document.getElementById("editModal"));
 
 
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
@@ -16,8 +16,13 @@ for (let button of editButtons) {
   button.addEventListener("click", (e) => {
     let recipeSlug = e.target.getAttribute("data-recipe_slug");
 
-    editConfirm.href = `edit_recipe/${recipeSlug}`;
-    editModal.show();
+
+    // let curEditConfirm = document.getElementById(`editConfirm-${recipeSlug}`);
+    let curEditModal = new bootstrap.Modal(document.getElementById(`editModal-${recipeSlug}`));
+    let editForm = document.getElementById(`editRecipeForm-${recipeSlug}`);
+    editForm.setAttribute("action", `edit_recipe/${recipeSlug}`);
+    // curEditConfirm.href = `edit_recipe/${recipeSlug}`;
+    curEditModal.show();
 
 
 

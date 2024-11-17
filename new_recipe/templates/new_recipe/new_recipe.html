@@ -18,7 +18,7 @@
             {% if user.is_authenticated %}
             <h3> Please add new recipe:</h3>
             <p>Posting as: {{user.username}}</p>
-        <form id="newRecipe" method="post"  style="margin-top: 1.3em;">
+        <form id="newRecipe" method="post" enctype="multipart/form-data" style="margin-top: 1.3em;">
         
             {{ form | crispy }}
             {{ form.media }}
