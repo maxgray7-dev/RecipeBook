@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, reverse
+from django.shortcuts import render, reverse, redirect
 from django.views import generic
 from recipe_app.models import Recipe
 from django.shortcuts import get_object_or_404
@@ -66,19 +66,28 @@ def recipe_delete(request, slug):
 #  Editing Recipe 
 
 def recipe_edit(request, slug):
-    if request.method == "POST":
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            saved_form = form.save(commit=False)
+            saved_form.author = request.user
 
+            if form.cleaned_data['featured_image'] == 'placeholder':
+                queryset = Recipe.objects.filter(status=0)
+                recipe = get_object_or_404(queryset, slug=slug)
+                saved_form.featured_image = recipe.featured_image
+
+            Recipe.objects.filter(slug=slug).delete()
+            
+            saved_form.save()
+            return redirect("my_drafts:recipe_success")
+    else:
         queryset = Recipe.objects.filter(status=0)
         recipe = get_object_or_404(queryset, slug=slug)
-        recipe_form = RecipeForm(data=request.POST, instance=recipe)
+        form = RecipeForm(initial={'title': recipe.title, 'description': recipe.description})
 
-        if recipe_form.is_valid():
-            recipe = recipe_form.save(commit=False)
-            recipe.author = request.user
-            recipe.save()
-            messages.add_message(request, messages.SUCCESS, 'Recipe Updated')
-        else:
-            messages.add_message(request, messages.ERROR, 'Error Updating Recipe')
+    return render(request, 'my_drafts/edit_recipe.html', {'form': form})
 
-    return HttpResponseRedirect(reverse('my_drafts:my_drafts'))
-
+# Show to user that new recipe has been added succesfully
+def recipe_success(request):
+    return render(request, 'my_drafts/recipe_success.html')

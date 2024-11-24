@@ -1,37 +1,6 @@
-
-const editButtons = document.getElementsByClassName("btn-edit");
-// const recipeForm = document.getElementById("recipeForm");
-// const submitButton = document.getElementById("submitButton");
-// const editConfirm = document.getElementById("editConfirm");
-// const editModal = new bootstrap.Modal(document.getElementById("editModal"));
-
-
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 const deleteButtons = document.getElementsByClassName("btn-delete");
 const deleteConfirm = document.getElementById("deleteConfirm");
-
-
-
-for (let button of editButtons) {
-  button.addEventListener("click", (e) => {
-    let recipeSlug = e.target.getAttribute("data-recipe_slug");
-
-
-    // let curEditConfirm = document.getElementById(`editConfirm-${recipeSlug}`);
-    let curEditModal = new bootstrap.Modal(document.getElementById(`editModal-${recipeSlug}`));
-    let editForm = document.getElementById(`editRecipeForm-${recipeSlug}`);
-    editForm.setAttribute("action", `edit_recipe/${recipeSlug}`);
-    // curEditConfirm.href = `edit_recipe/${recipeSlug}`;
-    curEditModal.show();
-
-
-
-    // let recipeContent = document.getElementById(`recipe${recipeSlug}`).innerText;
-    // recipeText.value = recipeContent;
-    // submitButton.innerText = "Update";
-    // recipeForm.setAttribute("action", `edit_recipe/${recipeSlug}`);
-  });
-}
 
 /**
 * Initializes deletion functionality for the provided delete buttons.
