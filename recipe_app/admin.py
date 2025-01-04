@@ -15,6 +15,6 @@ class RecipeAdmin(SummernoteModelAdmin):
     list_filter = ('author', 'title', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
 
-# admin.site.register(Comment)
+
 
 

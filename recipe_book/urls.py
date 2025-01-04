@@ -21,10 +21,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
     path('about/', include('about.urls'), name = 'about'),
     path('recipe/', include('new_recipe.urls')),
     path('my_drafts/', include('my_drafts.urls', namespace='my_drafts')),
     path('accounts/', include('allauth.urls')),
-    path('summernote/', include('django_summernote.urls')),
     path('', include('recipe_app.urls', namespace='recipe_app')),
 ]

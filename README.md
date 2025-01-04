@@ -21,8 +21,8 @@ The site allows to store all recipies and share interesting menu with other user
 # user-experience
 
 ### Ideal User
-- The ideal user can be anyone who knows how to cook and enjoys cooking. 
-- This can be ideal tool for someone who like try new favourite recipes and wants it easy to reach.
+- The ideal user is the one who cooks often and prefer to keep records of his favourite recipies in one place. Also to try new recipies that can be published in the same place.
+- This can be ideal tool for someone who likes trying new interesting recipes, adding his own recipies here in the same place and find everything he needs. 
 - Can be espesially interesting for people with strict diet plans, such as vegeterians, vegans, pescaterians etc. This is because people can add their favorite recipes and can always get an access to them as soon as they have an internet.
 - It can be also interesting to those who like to share some great recipies with others.
 
@@ -74,7 +74,8 @@ After adding a recipe, admin will be needed to approve it before it published.
 
 - The current project requires more options to be added.
 - To make this project even more interesting, I would add option to comment recipies and give them likes.This would allow users interact with other users.
-- I would include option to check recipies and approve it in future for admin.
+- I would include option to add recipies in favourite so they would be added and ranged in more easy way to find them.
+- The search option could be added to make easier to find recipies.
 - I would also create a new page Favourites, this would be a page where user can save his favourite recipies in alpabetic order.
 
 # Technologies
