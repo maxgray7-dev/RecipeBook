@@ -23,6 +23,20 @@ body {
     color: #ECE3DA;
 }
 
+/*Search bar*/
+.search-form {
+    border:3px;
+    display:flex;
+    background: #ec20d1;
+
+}
+
+.btn.btn-outline-success {
+    color:rgb(255, 0, 119);
+}
+
+
+
 .navbar-toggler {
     color:#ECE3DA;
     border:1px;
