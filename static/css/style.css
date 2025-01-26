@@ -24,10 +24,13 @@ body {
 }
 
 /*Search bar*/
-.search-form {
+#myInput {
     border:3px;
     display:flex;
-    background: #ec20d1;
+    
+    width: 25%;
+
+    margin-left: 1rem;
 
 }
 
