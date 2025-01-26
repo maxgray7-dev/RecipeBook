@@ -27,11 +27,8 @@ body {
 #myInput {
     border:3px;
     display:flex;
-    
     width: 25%;
-
     margin-left: 1rem;
-
 }
 
 .btn.btn-outline-success {
@@ -74,6 +71,21 @@ body {
 
 .image-container {
     position: relative;
+    height: 20em;
+    text-align: left;
+}
+
+.image-container img {
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.page-link:hover,
+.page-link {
+    background-color: #c0521f;
+    color: #ECE3DA;
+    border-radius: 25px;
 }
 
 /*------------------------------------Recipe titles on the main page*/
