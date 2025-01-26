@@ -6,6 +6,6 @@ class RecipeForm(forms.ModelForm):
     class Meta:
         model = Recipe
         fields = ('title', 'description', 'featured_image',)
-    description = forms.CharField(widget=SummernoteWidget())
+    description = forms.CharField(widget=SummernoteWidget(attrs={'summernote': {'width': '100%'}}))
 
 
