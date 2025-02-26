@@ -25,15 +25,6 @@ class RecipeList(generic.ListView):
 
 
 def recipe_detail(request, slug):
-    
-    #Display an individual :model:'blog.Post'.
-    
-    #   ***Context***
-    #   'post''
-    #   An instance of :model:'blog.Post'.
-
-    #   *** Template ***
-    #   :template:'blog/post_detail.html'
     queryset = Recipe.objects.filter()
     recipe = get_object_or_404(queryset, slug=slug)
 
@@ -42,7 +33,6 @@ def recipe_detail(request, slug):
     return render(
         request,
         "recipe_app/recipe_detail.html",
-        {"r": recipe,
-        },
+        {"r": recipe},
 
     )
